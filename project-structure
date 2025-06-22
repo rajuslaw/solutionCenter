@@ -1,0 +1,19 @@
+project_root/
+├── config.py                  # Stores config values like API URLs
+├── main.py                    # Entry point for the agent
+├── requirements.txt           # Python dependencies
+├── README.md                  # Project documentation
+├── .env                       # Environment variables (e.g. API keys, passwords)
+├── email_reader.py            # Module to read incoming emails
+├── email_sender.py            # Module to send outgoing emails
+├── intent_classifier.py       # Uses OpenAI to understand user intent
+├── response_generator.py      # Generates professional replies
+├── router.py                  # Directs request to the correct system handler
+├── systems/                   # Handlers for each business application
+│   ├── __init__.py
+│   ├── concur_api.py          # Handles Concur API requests
+│   ├── corp_card_api.py       # Handles Corporate Card API requests
+│   └── invoice_api.py         # Handles Invoice Processing API requests
+└── utils/                     # Utility functions
+    ├── __init__.py
+    └── logger.py              # Logger configuration
