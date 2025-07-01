@@ -1,0 +1,7 @@
+
+
+pip install langchain langchain-community groq
+ pip install langchain langgraph openai
+
+pip install uvicorn fastapi
+
