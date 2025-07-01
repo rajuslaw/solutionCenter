@@ -1,0 +1,28 @@
+import requests
+
+# Target URL
+url = "https://tachyon-/playground_document"
+
+# Headers
+headers = {
+    "Content-Type": "application/json",
+    "Origin": "https://tachyon-.net",
+}
+
+# Session cookie (copied from network tab)
+cookies = {
+    "higgs_session": ""
+    # Truncated — ensure you paste the full value from your screenshot
+}
+
+# Payload data (replace with actual data you want to send)
+payload = {
+    "key": "value"  # Replace with the actual JSON body
+}
+
+# Send POST request
+response = requests.post(url, headers=headers, cookies=cookies, json=payload)
+
+# Output response
+print("Status Code:", response.status_code)
+print("Response Body:", response.text)
