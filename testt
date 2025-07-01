@@ -1,0 +1,6 @@
+# ✅ STANDALONE TEST
+if __name__ == "__main__":
+    sample_query = "Status of this invoice-123"
+    result = query_tachyon_llm_structured(sample_query)
+    print("\n🧠 Parsed Result:")
+    print(json.dumps(result, indent=2))
